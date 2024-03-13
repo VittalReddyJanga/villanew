@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MagivVilla_Web.props" />
+</Project>

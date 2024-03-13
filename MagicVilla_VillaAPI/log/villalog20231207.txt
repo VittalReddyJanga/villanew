@@ -1,0 +1,136 @@
+2023-12-07 09:00:36.769 -08:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-07 09:00:36.841 -08:00 [DBG] Hosting starting
+2023-12-07 09:00:36.992 -08:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-07 09:00:37.062 -08:00 [INF] Now listening on: https://localhost:7058
+2023-12-07 09:00:37.063 -08:00 [INF] Now listening on: http://localhost:5275
+2023-12-07 09:00:37.063 -08:00 [DBG] Loaded hosting startup assembly MagicVilla_VillaAPI
+2023-12-07 09:00:37.063 -08:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-07 09:00:37.063 -08:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-07 09:00:37.064 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 09:00:37.065 -08:00 [INF] Hosting environment: Development
+2023-12-07 09:00:37.066 -08:00 [INF] Content root path: C:\Users\vredd\OneDrive\Desktop\RestApi Udemy\MagicVilla\MagicVilla_VillaAPI
+2023-12-07 09:00:37.066 -08:00 [DBG] Hosting started
+2023-12-07 09:00:37.086 -08:00 [DBG] Connection id "0HMVN8O4D5DPF" received FIN.
+2023-12-07 09:00:37.096 -08:00 [DBG] Connection id "0HMVN8O4D5DPF" accepted.
+2023-12-07 09:00:37.097 -08:00 [DBG] Connection id "0HMVN8O4D5DPF" started.
+2023-12-07 09:00:37.127 -08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-07 09:00:37.407 -08:00 [DBG] Connection id "0HMVN8O4D5DPF" stopped.
+2023-12-07 09:00:37.415 -08:00 [DBG] Connection id "0HMVN8O4D5DPF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 09:00:37.708 -08:00 [DBG] Connection id "0HMVN8O4D5DPG" accepted.
+2023-12-07 09:00:37.710 -08:00 [DBG] Connection id "0HMVN8O4D5DPG" started.
+2023-12-07 09:00:37.824 -08:00 [DBG] Connection id "0HMVN8O4D5DPG" received FIN.
+2023-12-07 09:00:37.825 -08:00 [DBG] Connection id "0HMVN8O4D5DPH" accepted.
+2023-12-07 09:00:37.827 -08:00 [DBG] Connection id "0HMVN8O4D5DPH" started.
+2023-12-07 09:00:37.871 -08:00 [DBG] Connection id "0HMVN8O4D5DPH" received FIN.
+2023-12-07 09:00:37.872 -08:00 [DBG] Connection id "0HMVN8O4D5DPI" accepted.
+2023-12-07 09:00:37.873 -08:00 [DBG] Connection id "0HMVN8O4D5DPI" started.
+2023-12-07 09:00:37.930 -08:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-07 09:00:37.930 -08:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-07 09:00:37.932 -08:00 [DBG] Connection id "0HMVN8O4D5DPG" stopped.
+2023-12-07 09:00:37.932 -08:00 [DBG] Connection id "0HMVN8O4D5DPH" stopped.
+2023-12-07 09:00:37.932 -08:00 [DBG] Connection id "0HMVN8O4D5DPH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 09:00:37.932 -08:00 [DBG] Connection id "0HMVN8O4D5DPG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 09:00:37.945 -08:00 [DBG] Connection 0HMVN8O4D5DPI established using the following protocol: "Tls13"
+2023-12-07 09:00:38.066 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger - -
+2023-12-07 09:00:38.111 -08:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-07 09:00:38.147 -08:00 [DBG] No candidates found for the request path '/swagger'
+2023-12-07 09:00:38.148 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:38.179 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger - - - 301 0 - 116.8182ms
+2023-12-07 09:00:38.196 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/index.html - -
+2023-12-07 09:00:38.197 -08:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-12-07 09:00:38.197 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:38.291 -08:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-07 09:00:38.389 -08:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-07 09:00:38.390 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/index.html - - - 200 - text/html;charset=utf-8 194.4179ms
+2023-12-07 09:00:38.397 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/swagger-ui.css - -
+2023-12-07 09:00:38.398 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/swagger-ui-standalone-preset.js - -
+2023-12-07 09:00:38.398 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/swagger-ui-bundle.js - -
+2023-12-07 09:00:38.398 -08:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-12-07 09:00:38.398 -08:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-12-07 09:00:38.398 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:38.398 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 09:00:38.398 -08:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-12-07 09:00:38.398 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:38.398 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:38.455 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 56.7122ms
+2023-12-07 09:00:38.472 -08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-07 09:00:38.472 -08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-07 09:00:38.472 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 74.7522ms
+2023-12-07 09:00:38.473 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/swagger-ui.css - - - 200 144929 text/css 75.1237ms
+2023-12-07 09:00:38.531 -08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-07 09:00:38.532 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 133.8764ms
+2023-12-07 09:00:38.579 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/_vs/browserLink - -
+2023-12-07 09:00:38.631 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.7973ms
+2023-12-07 09:00:39.122 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/swagger/v1/swagger.json - -
+2023-12-07 09:00:39.122 -08:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-12-07 09:00:39.122 -08:00 [DBG] Request did not match any endpoints
+2023-12-07 09:00:39.259 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.6865ms
+2023-12-07 09:00:43.585 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/api/VillaAPI - -
+2023-12-07 09:00:43.589 -08:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI'
+2023-12-07 09:00:43.591 -08:00 [DBG] Endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)' with route pattern 'api/VillaAPI' is valid for the request path '/api/VillaAPI'
+2023-12-07 09:00:43.592 -08:00 [DBG] Request matched endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2023-12-07 09:00:43.593 -08:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-12-07 09:00:43.595 -08:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2023-12-07 09:00:43.609 -08:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.DTOS.VillaDto]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2023-12-07 09:00:43.611 -08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-07 09:00:43.611 -08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-07 09:00:43.611 -08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-07 09:00:43.611 -08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-07 09:00:43.611 -08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-07 09:00:43.613 -08:00 [DBG] Executing controller factory for controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI)
+2023-12-07 09:00:43.614 -08:00 [DBG] Executed controller factory for controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI)
+2023-12-07 09:00:43.615 -08:00 [INF] Getting all villas
+2023-12-07 09:00:43.619 -08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-07 09:00:43.623 -08:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-12-07 09:00:43.624 -08:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-12-07 09:00:43.624 -08:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-07 09:00:43.624 -08:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-07 09:00:43.625 -08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-07 09:00:43.626 -08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.DTOS.VillaDto, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-07 09:00:43.639 -08:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 22.5308ms
+2023-12-07 09:00:43.640 -08:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2023-12-07 09:00:43.640 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/api/VillaAPI - - - 200 - application/json;+charset=utf-8 54.8735ms
+2023-12-07 09:01:00.328 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7058/api/VillaAPI/0 - -
+2023-12-07 09:01:00.329 -08:00 [DBG] 1 candidate(s) found for the request path '/api/VillaAPI/0'
+2023-12-07 09:01:00.329 -08:00 [DBG] Endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)' with route pattern 'api/VillaAPI/{id:int}' is valid for the request path '/api/VillaAPI/0'
+2023-12-07 09:01:00.329 -08:00 [DBG] Request matched endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)'
+2023-12-07 09:01:00.329 -08:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-12-07 09:01:00.329 -08:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)'
+2023-12-07 09:01:00.340 -08:00 [INF] Route matched with {action = "GetVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.DTOS.VillaDto] GetVilla(Int32) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2023-12-07 09:01:00.340 -08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-07 09:01:00.340 -08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-07 09:01:00.340 -08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-07 09:01:00.340 -08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-07 09:01:00.341 -08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-07 09:01:00.341 -08:00 [DBG] Executing controller factory for controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI)
+2023-12-07 09:01:00.341 -08:00 [DBG] Executed controller factory for controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI)
+2023-12-07 09:01:00.353 -08:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-12-07 09:01:00.355 -08:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-12-07 09:01:00.356 -08:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-12-07 09:01:00.356 -08:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-12-07 09:01:00.356 -08:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-12-07 09:01:00.358 -08:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-12-07 09:01:00.359 -08:00 [ERR] get vill error with id 0
+2023-12-07 09:01:00.360 -08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-07 09:01:00.361 -08:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-12-07 09:01:00.361 -08:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-12-07 09:01:00.361 -08:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-12-07 09:01:00.361 -08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-12-07 09:01:00.361 -08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-12-07 09:01:00.363 -08:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI) in 21.9436ms
+2023-12-07 09:01:00.363 -08:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)'
+2023-12-07 09:01:00.363 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7058/api/VillaAPI/0 - - - 400 - application/problem+json;+charset=utf-8 34.6631ms

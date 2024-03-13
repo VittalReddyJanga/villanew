@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuEGgmbwygUW/9FiKoiQT5AAAAAACAAAAAAAQZgAAAAEAACAAAAB/lMZr2nCPUMUWNBNA0T9Yts6p9kRI26UTaeqlv5lBKQAAAAAOgAAAAAIAACAAAABA5NrqzewgFjuIlTzippPE8y2CE2uUidqcRm7jpA+Ig6AAAAA7rvJKWRmXEMp5fpNFkwCmNeyUohZLFIVB1GdLuaM7S5t6yEBciwUGQpEvtmRHvoa+jWnuQ3nn1Ip8WYsJuWCjEX3AHqp848Hc57SNUZfb76FscjK6cu6yE3TRtSJ+vRNyy5cacgO1tC9LHZ7N3bo900wHG8h0j+QDERtLXGiMZqfD9lFMXx+x3QtOL95E2r6hDH1ayYPld1eSwfc2zaDXQAAAAH0k0NkQ4D0pjTrMQelAmLdMFCs5EtsFAM/n4g598C+EsJudu0kUkzXbhRi/jZKxPTOu3bDOuUKe8f7kAXyaVsc=</EncryptedPassword>
+    <History>True|2024-02-23T21:40:50.1290752Z;True|2024-02-23T13:37:30.5064456-08:00;True|2024-02-23T13:20:53.2157398-08:00;True|2024-02-23T13:13:42.6334306-08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="defaultSqlConnection">
+      <Value>Server=tcp:mytestserver007.database.windows.net,1433%3bInitial Catalog=MagicVilla%3bPersist Security Info=False%3bUser ID=adminuser%3bPassword=Infodat%401234%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
